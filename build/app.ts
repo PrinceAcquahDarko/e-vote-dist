@@ -4,7 +4,7 @@ import { isOperationalError, logError, returnError } from './error/baseError';
 import {app} from './server'
 
 
-const url = 'mongodb://localhost/evotes';
+const url = process.env.URL;
 const logger = pino()
 const PORT = process.env.PORT || 3000
 
